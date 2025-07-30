@@ -66,6 +66,8 @@
         <input type="text" v-model="dataW" placeholder="发送自定义AT指令">
         <button @click="write()">发送</button>
         <button @click="write('AT+CGEQOSRDP=1')">限速检测</button>
+        <button @click="write('AT+ZEMSCIQ=1')">当前基站检测</button>
+        <button @click="write('AT+ZNCELLINFO?')">邻区检测</button>
       </div>
       <div class="right">
         <textarea id="scroll_text" cols="30" rows="10" v-model="dataR" readonly=""></textarea>
